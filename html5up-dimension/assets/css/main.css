@@ -65,6 +65,10 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+.projects{
+	width:100%;
+}
+
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -685,7 +689,7 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
+			align-items: center;
 			margin: 0 0 2rem 0;
 			width: 100%;
 		}
@@ -695,9 +699,9 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			display: bloc;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.main img {
@@ -1140,9 +1144,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1663,19 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.project {
+			width: 48%;
+			
+		}
+
+		.project img {
+			display: block;
+			height: 12rem;
+			object-fit: cover;
+		}		
